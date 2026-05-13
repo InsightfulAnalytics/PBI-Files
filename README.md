@@ -1,10 +1,5 @@
-Various PBIX files for PBI visualisation methods.
+Various PBIX files demonstrating Power BI visualisation techniques, including custom visuals, DAX patterns, and report design methods.
 
-See my Substack here:
-https://timosborn.substack.com/
-
-LinkedIn:
+Follow me on LinkedIn for more Power BI tips, tutorials, and visualisation techniques:
 https://www.linkedin.com/in/osborntim/
 
-Novy Pro for my PBI Portfolio
-https://www.novypro.com/profile_about/timosborn
