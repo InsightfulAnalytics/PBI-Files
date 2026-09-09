@@ -6,11 +6,11 @@
 
 ### The `.pbix` files behind my Power BI tips on LinkedIn
 
-Eighteen working reports. Every one has the data baked in, so you can open it, click into any visual, and see exactly how the trick is wired up.
+Seventeen working reports. Every one has the data baked in, so you can open it, click into any visual, and see exactly how the trick is wired up.
 
 <br>
 
-[![pbix files](https://img.shields.io/badge/.pbix%20files-18-F2C811?style=for-the-badge&logo=powerbi&logoColor=1a1a1a)](#the-files) [![Core visuals](https://img.shields.io/badge/built%20with-core%20visuals-005F73?style=for-the-badge)](#the-files) [![Follow on LinkedIn](https://img.shields.io/badge/Follow-Tim%20Osborn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/osborntim/) [![Stars](https://img.shields.io/github/stars/InsightfulAnalytics/PBI-Files?style=for-the-badge&color=0A9396)](https://github.com/InsightfulAnalytics/PBI-Files/stargazers)
+[![pbix files](https://img.shields.io/badge/.pbix%20files-17-F2C811?style=for-the-badge&logo=powerbi&logoColor=1a1a1a)](#the-files) [![Core visuals](https://img.shields.io/badge/built%20with-core%20visuals-005F73?style=for-the-badge)](#the-files) [![Follow on LinkedIn](https://img.shields.io/badge/Follow-Tim%20Osborn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/osborntim/) [![Stars](https://img.shields.io/github/stars/InsightfulAnalytics/PBI-Files?style=for-the-badge&color=0A9396)](https://github.com/InsightfulAnalytics/PBI-Files/stargazers)
 
 </div>
 
@@ -53,7 +53,7 @@ If one of these saves you an afternoon, a star costs you nothing and helps other
 <tr>
 <td align="center"><a href="#half-blank-lines-pl"><img src="assets/thumbs/half-blank-lines-p-and-l.png" width="300"><br><b>Half height rows in a matrix</b></a></td>
 <td align="center"><a href="#sales--budget"><img src="assets/thumbs/sales-and-budget.png" width="300"><br><b>Monthly budget, daily grain</b></a></td>
-<td align="center"><a href="#testing"><img src="assets/thumbs/testing.png" width="300"><br><b>Four slicers, one field</b></a></td>
+<td></td>
 </tr>
 </table>
 
@@ -62,7 +62,7 @@ If one of these saves you an afternoon, a star costs you nothing and helps other
 ## Getting started
 
 1. Download the `.pbix` you want, or clone the whole repo.
-2. Open it in [Power BI Desktop](https://powerbi.microsoft.com/desktop/). The free version is enough.
+2. Open it in [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 3. Click the visual you came for and open the **Format** pane. The trick is always in a formatting card or a measure, and this README tells you which one.
 
 There is nothing to connect and nothing to refresh. Every file carries its own model with the data already loaded, so they open offline and behave exactly as they did when the post went out.
@@ -78,7 +78,6 @@ One dependency worth knowing about: **3 Service Profit Analysis** uses the Chicl
 - [Transparency as a formatting tool](#transparency-as-a-formatting-tool)
 - [Variance, highlighting and context](#variance-highlighting-and-context)
 - [Matrix layout and DAX plumbing](#matrix-layout-and-dax-plumbing)
-- [Scratchpad](#scratchpad)
 
 <br>
 
@@ -329,22 +328,6 @@ The follow up post makes the case for doing the transformation upstream instead,
 
 <br>
 
-## Scratchpad
-
-### testing
-
-<img src="assets/screenshots/testing.png" alt="Four different slicer types showing the same field side by side" width="900">
-
-Exactly what the name says, kept because the comparison turned out to be useful. The same field rendered four ways side by side: the legacy slicer, the new list slicer, the button slicer and a table.
-
-That layout is what caught a March 2025 bug. The list and button slicers were rendering **Select all** with the text of another option, "Thing1" and "Thing3" in the picture, while the legacy slicer showed it correctly. Having all four next to each other is what made it obvious.
-
-The second page fakes blocky total series out of a line chart, by setting the line type to step, turning the area on and hiding the stroke.
-
-[Read the post](https://www.linkedin.com/feed/update/urn:li:activity:7315897674774237184) &nbsp;·&nbsp; [Download](https://github.com/InsightfulAnalytics/PBI-Files/raw/main/testing.pbix) &nbsp;·&nbsp; 2 pages, 6 visuals
-
-<br>
-
 ## Full index
 
 | File | What it shows | Pages | Visuals | Post |
@@ -366,15 +349,14 @@ The second page fakes blocky total series out of a line chart, by setting the li
 | [Variance Highlights Stacked Bar Chart](Variance%20Highlights%20Stacked%20Bar%20Chart.pbix) | Three segment stack turns the bar tip into the variance | 4 | 9 | [2025-05-08](https://www.linkedin.com/feed/update/urn:li:activity:7326008724538429442) |
 | [Visual Calculations for Y Axis Max](Visual%20Calculations%20for%20Y%20Axis%20Max.pbix) | Hidden visual calculation drives the value axis maximum | 3 | 15 | [2025-06-08](https://www.linkedin.com/feed/update/urn:li:activity:7337303507495989248) |
 | [Y Axis Ratio](Y%20Axis%20Ratio.pbix) | Scatter ratio line plus DAX that colours each bubble | 3 | 7 | [2025-05-30](https://www.linkedin.com/feed/update/urn:li:activity:7334100152963448832) |
-| [testing](testing.pbix) | Four slicer types on one field, and fake blocky totals | 2 | 6 | [2025-04-10](https://www.linkedin.com/feed/update/urn:li:activity:7315897674774237184) |
 
 <br>
 
 ## Notes
 
-**Format.** Sixteen of these are classic `.pbix` files. Two, *Error bars for column chart data labels* and *Transparent Text*, were saved from a newer Desktop build and carry the enhanced report format inside, so their report definitions are readable JSON if you unzip them.
+**Format.** Fifteen of these are classic `.pbix` files. Two, *Error bars for column chart data labels* and *Transparent Text*, were saved from a newer Desktop build and carry the enhanced report format inside, so their report definitions are readable JSON if you unzip them.
 
-**Themes.** Most files use a theme built with the BIBB.PRO theme generator, or one of my "2025 Projects" palettes. Two of them, *testing* and *Testing Ribbon Chart*, run on the stock Power BI theme.
+**Themes.** Most files use a theme built with the BIBB.PRO theme generator, or one of my "2025 Projects" palettes. *Testing Ribbon Chart* is the one that runs on the stock Power BI theme.
 
 **Data.** All sample data. Nothing here comes from a client.
 
