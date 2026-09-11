@@ -285,7 +285,7 @@ The scatter chart's ratio line from the Analytics pane, which draws `y = (sum of
 
 Three pages build it up one step at a time.
 
-[Read the post](https://www.linkedin.com/feed/update/urn:li:activity:7334100152963448832) &nbsp;·&nbsp; [Download](https://github.com/InsightfulAnalytics/PBI-Files/raw/main/Y%20Axis%20Ratio.pbix) &nbsp;·&nbsp; 3 pages, 7 visuals
+[Read the article](https://binexus.net/blog/power-bi-scatter-chart-ratio-line/) &nbsp;·&nbsp; [Download](https://github.com/InsightfulAnalytics/PBI-Files/raw/main/Y%20Axis%20Ratio.pbix) &nbsp;·&nbsp; 3 pages, 7 visuals
 
 <br>
 
@@ -348,7 +348,7 @@ The follow up post makes the case for doing the transformation upstream instead,
 | [Transparent Text](Transparent%20Text.pbix) | Measure driven fill hides and shows a warning banner | 1 | 4 | [2025-11-13](https://www.linkedin.com/feed/update/urn:li:activity:7394621519190028289) |
 | [Variance Highlights Stacked Bar Chart](Variance%20Highlights%20Stacked%20Bar%20Chart.pbix) | Three segment stack turns the bar tip into the variance | 4 | 9 | [2025-05-08](https://www.linkedin.com/feed/update/urn:li:activity:7326008724538429442) |
 | [Visual Calculations for Y Axis Max](Visual%20Calculations%20for%20Y%20Axis%20Max.pbix) | Hidden visual calculation drives the value axis maximum | 3 | 15 | [2025-06-08](https://www.linkedin.com/feed/update/urn:li:activity:7337303507495989248) |
-| [Y Axis Ratio](Y%20Axis%20Ratio.pbix) | Scatter ratio line plus DAX that colours each bubble | 3 | 7 | [2025-05-30](https://www.linkedin.com/feed/update/urn:li:activity:7334100152963448832) |
+| [Y Axis Ratio](Y%20Axis%20Ratio.pbix) | Scatter ratio line plus DAX that colours each bubble | 3 | 7 | [2025-05-30](https://binexus.net/blog/power-bi-scatter-chart-ratio-line/) |
 
 <br>
 
@@ -359,6 +359,12 @@ The follow up post makes the case for doing the transformation upstream instead,
 **Themes.** Most files use a theme built with the BIBB.PRO theme generator, or one of my "2025 Projects" palettes. *Testing Ribbon Chart* is the one that runs on the stock Power BI theme.
 
 **Data.** All sample data. Nothing here comes from a client.
+
+<br>
+
+## Licence
+
+Released under the [MIT Licence](LICENSE). Use the files, take the techniques apart, reuse them in your own work.
 
 <br>
 
