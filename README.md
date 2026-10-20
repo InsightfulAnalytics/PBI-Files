@@ -6,11 +6,11 @@
 
 ### The `.pbix` files behind my Power BI tips on LinkedIn
 
-Seventeen working reports. Every one has the data baked in, so you can open it, click into any visual, and see exactly how the trick is wired up.
+Eighteen working reports. Every one has the data baked in, so you can open it, click into any visual, and see exactly how the trick is wired up.
 
 <br>
 
-[![pbix files](https://img.shields.io/badge/.pbix%20files-17-F2C811?style=for-the-badge&logo=powerbi&logoColor=1a1a1a)](#the-files) [![Core visuals](https://img.shields.io/badge/built%20with-core%20visuals-005F73?style=for-the-badge)](#the-files) [![Follow on LinkedIn](https://img.shields.io/badge/Follow-Tim%20Osborn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/osborntim/) [![Stars](https://img.shields.io/github/stars/InsightfulAnalytics/PBI-Files?style=for-the-badge&color=0A9396)](https://github.com/InsightfulAnalytics/PBI-Files/stargazers)
+[![pbix files](https://img.shields.io/badge/.pbix%20files-18-F2C811?style=for-the-badge&logo=powerbi&logoColor=1a1a1a)](#the-files) [![Core visuals](https://img.shields.io/badge/built%20with-core%20visuals-005F73?style=for-the-badge)](#the-files) [![Follow on LinkedIn](https://img.shields.io/badge/Follow-Tim%20Osborn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/osborntim/) [![Stars](https://img.shields.io/github/stars/InsightfulAnalytics/PBI-Files?style=for-the-badge&color=0A9396)](https://github.com/InsightfulAnalytics/PBI-Files/stargazers)
 
 </div>
 
@@ -53,7 +53,7 @@ If one of these saves you an afternoon, a star costs you nothing and helps other
 <tr>
 <td align="center"><a href="#half-blank-lines-pl"><img src="assets/thumbs/half-blank-lines-p-and-l.png" width="300"><br><b>Half height rows in a matrix</b></a></td>
 <td align="center"><a href="#sales--budget"><img src="assets/thumbs/sales-and-budget.png" width="300"><br><b>Monthly budget, daily grain</b></a></td>
-<td></td>
+<td align="center"><a href="#release-gantt"><img src="assets/thumbs/release-gantt.png" width="300"><br><b>The native Gantt chart</b></a></td>
 </tr>
 </table>
 
@@ -73,11 +73,26 @@ One dependency worth knowing about: **3 Service Profit Analysis** uses the Chicl
 
 ## The files
 
+- [New core visuals](#new-core-visuals)
 - [Data labels that behave](#data-labels-that-behave)
 - [Chart types the core visuals were never meant to make](#chart-types-the-core-visuals-were-never-meant-to-make)
 - [Transparency as a formatting tool](#transparency-as-a-formatting-tool)
 - [Variance, highlighting and context](#variance-highlighting-and-context)
 - [Matrix layout and DAX plumbing](#matrix-layout-and-dax-plumbing)
+
+<br>
+
+## New core visuals
+
+### Release Gantt
+
+<img src="assets/screenshots/release-gantt.png" alt="A Gantt chart of software releases in four coloured sections: Development, Testing, Slip and Release" width="900">
+
+Power BI's new core Gantt chart, four ways, on 643 software releases. The pipeline page puts the phase in the category and the release in the task row, so every release shows up once in Development, Testing, Slip and Release, each section in its own colour. A Power Query step gives each release one row per phase, and a row with a start date but no end date draws a diamond.
+
+The data is the Software Delivery & Quality dataset from the [ZoomCharts Power BI Challenge for October 2026](https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/challenges/zoomcharts-power-bi-challenge-october-2026). It's baked in like every other file here, but it's ZoomCharts' data, so this repo's MIT licence doesn't cover it. The Gantt is a preview visual: you need Desktop 26.10 or later with it turned on.
+
+[Read the article](https://binexus.net/blog/power-bi-gantt-chart/) &nbsp;·&nbsp; [Download](https://github.com/InsightfulAnalytics/PBI-Files/raw/main/Release%20Gantt.pbix) &nbsp;·&nbsp; 4 pages, 16 visuals
 
 <br>
 
@@ -340,6 +355,7 @@ The follow up post makes the case for doing the transformation upstream instead,
 | [Error bars for column chart data labels](Error%20bars%20for%20column%20chart%20data%20labels.pbix) | Invisible error bar reserves headroom for two line labels | 1 | 4 | [2025-11-14](https://www.linkedin.com/feed/update/urn:li:activity:7394984274246000642) |
 | [Half Blank Lines P&L](Half%20Blank%20Lines%20P%26L.pbix) | Space format string renders half height separator rows | 2 | 1 | [2025-09-09](https://www.linkedin.com/feed/update/urn:li:activity:7371080971565060096) |
 | [Health Dataset](Health%20Dataset.pbix) | Error bar shading fakes an actual versus last year band | 4 | 14 | [2024-09-13](https://www.linkedin.com/feed/update/urn:li:activity:7240321843184689152) |
+| [Release Gantt](Release%20Gantt.pbix) | Native Gantt chart: one row per phase, milestones from a blank end | 4 | 16 | [2026-10-21](https://binexus.net/blog/power-bi-gantt-chart/) |
 | [Sales & Budget](Sales%20%26%20Budget.pbix) | Monthly budget allocated to daily grain, with a speed test | 4 | 13 | [2024-10-05](https://www.linkedin.com/feed/update/urn:li:activity:7248319287663206404) |
 | [Slope Chart](Slope%20Chart.pbix) | RANK visual calculation on an inverted line chart | 3 | 13 | [2025-06-09](https://www.linkedin.com/feed/update/urn:li:activity:7337734334793007104) |
 | [Strip plot](Strip%20plot.pbix) | Constant visual calc collapses a scatter chart into a strip | 3 | 8 | [2025-07-17](https://www.linkedin.com/feed/update/urn:li:activity:7351448134960496641) |
@@ -354,17 +370,17 @@ The follow up post makes the case for doing the transformation upstream instead,
 
 ## Notes
 
-**Format.** Fifteen of these are classic `.pbix` files. Two, *Error bars for column chart data labels* and *Transparent Text*, were saved from a newer Desktop build and carry the enhanced report format inside, so their report definitions are readable JSON if you unzip them.
+**Format.** Fifteen of these are classic `.pbix` files. Three, *Error bars for column chart data labels*, *Transparent Text* and *Release Gantt*, were saved from a newer Desktop build and carry the enhanced report format inside, so their report definitions are readable JSON if you unzip them.
 
 **Themes.** Most files use a theme built with the BIBB.PRO theme generator, or one of my "2025 Projects" palettes. *Testing Ribbon Chart* is the one that runs on the stock Power BI theme.
 
-**Data.** All sample data. Nothing here comes from a client.
+**Data.** All sample data. Nothing here comes from a client. *Release Gantt* carries ZoomCharts' challenge dataset, credited in its section.
 
 <br>
 
 ## Licence
 
-Released under the [MIT Licence](LICENSE). Use the files, take the techniques apart, reuse them in your own work.
+Released under the [MIT Licence](LICENSE). Use the files, take the techniques apart, reuse them in your own work. The one exception is the data inside *Release Gantt*, which belongs to ZoomCharts and isn't covered by this licence.
 
 <br>
 
