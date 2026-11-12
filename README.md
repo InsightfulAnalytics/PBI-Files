@@ -76,6 +76,7 @@ One dependency worth knowing about: **3 Service Profit Analysis** uses the Chicl
 
 ## The files
 
+- [Five tricks with core visuals](#five-tricks-with-core-visuals)
 - [New core visuals](#new-core-visuals)
 - [Data labels that behave](#data-labels-that-behave)
 - [Chart types the core visuals were never meant to make](#chart-types-the-core-visuals-were-never-meant-to-make)
@@ -85,13 +86,13 @@ One dependency worth knowing about: **3 Service Profit Analysis** uses the Chicl
 
 <br>
 
-## New core visuals
+## Five tricks with core visuals
 
 ### Visual Tricks
 
 <img src="assets/screenshots/visual-tricks.png" alt="Five Power BI report pages: data bars set to show the bar only, KPI cards with tinted variance pills, a button slicer coloured like the chart legend, a list slicer with a report page tooltip, and a grid of numbers under a column chart" width="900">
 
-Five small formatting tricks on a made-up outdoor gear retailer, one page each. Most of them lean on the newer core visuals: the new card, the button slicer and the list slicer.
+Five small formatting tricks on a made-up outdoor gear retailer, one page each, all built with core visuals.
 
 - **Number and bar.** The same measure goes into a matrix twice, and the copy's data bars are set to Show bar only, so a % gets its number and its bar side by side.
 - **Pill badges.** The new card's reference label detail sits on a soft, tinted pill: font colour and background colour on one colour measure, background at 94% transparency.
@@ -102,6 +103,8 @@ Five small formatting tricks on a made-up outdoor gear retailer, one page each. 
 [Download](https://github.com/InsightfulAnalytics/PBI-Files/raw/main/Visual%20Tricks.pbix) &nbsp;·&nbsp; 6 pages, 24 visuals
 
 <br>
+
+## New core visuals
 
 ### Release Gantt
 
@@ -383,7 +386,7 @@ The follow up post makes the case for doing the transformation upstream instead,
 | [Transparent Text](Transparent%20Text.pbix) | Measure driven fill hides and shows a warning banner | 1 | 4 | [2025-11-13](https://www.linkedin.com/feed/update/urn:li:activity:7394621519190028289) |
 | [Variance Highlights Stacked Bar Chart](Variance%20Highlights%20Stacked%20Bar%20Chart.pbix) | Three segment stack turns the bar tip into the variance | 4 | 9 | [2025-05-08](https://www.linkedin.com/feed/update/urn:li:activity:7326008724538429442) |
 | [Visual Calculations for Y Axis Max](Visual%20Calculations%20for%20Y%20Axis%20Max.pbix) | Hidden visual calculation drives the value axis maximum | 3 | 15 | [2025-06-08](https://www.linkedin.com/feed/update/urn:li:activity:7337303507495989248) |
-| [Visual Tricks](Visual%20Tricks.pbix) | Five formatting tricks, one per page, on the newer core visuals | 6 | 24 | coming soon |
+| [Visual Tricks](Visual%20Tricks.pbix) | Five formatting tricks with core visuals, one per page | 6 | 24 | coming soon |
 | [Y Axis Ratio](Y%20Axis%20Ratio.pbix) | Scatter ratio line plus DAX that colours each bubble | 3 | 7 | [2025-05-30](https://binexus.net/blog/power-bi-scatter-chart-ratio-line/) |
 
 <br>
