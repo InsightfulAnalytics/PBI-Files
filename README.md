@@ -6,11 +6,11 @@
 
 ### The `.pbix` files behind my Power BI tips on LinkedIn
 
-Eighteen working reports. Every one has the data baked in, so you can open it, click into any visual, and see exactly how the trick is wired up.
+Nineteen working reports. Every one has the data baked in, so you can open it, click into any visual, and see exactly how the trick is wired up.
 
 <br>
 
-[![pbix files](https://img.shields.io/badge/.pbix%20files-18-F2C811?style=for-the-badge&logo=powerbi&logoColor=1a1a1a)](#the-files) [![Core visuals](https://img.shields.io/badge/built%20with-core%20visuals-005F73?style=for-the-badge)](#the-files) [![Follow on LinkedIn](https://img.shields.io/badge/Follow-Tim%20Osborn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/osborntim/) [![Stars](https://img.shields.io/github/stars/InsightfulAnalytics/PBI-Files?style=for-the-badge&color=0A9396)](https://github.com/InsightfulAnalytics/PBI-Files/stargazers)
+[![pbix files](https://img.shields.io/badge/.pbix%20files-19-F2C811?style=for-the-badge&logo=powerbi&logoColor=1a1a1a)](#the-files) [![Core visuals](https://img.shields.io/badge/built%20with-core%20visuals-005F73?style=for-the-badge)](#the-files) [![Follow on LinkedIn](https://img.shields.io/badge/Follow-Tim%20Osborn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/osborntim/) [![Stars](https://img.shields.io/github/stars/InsightfulAnalytics/PBI-Files?style=for-the-badge&color=0A9396)](https://github.com/InsightfulAnalytics/PBI-Files/stargazers)
 
 </div>
 
@@ -26,33 +26,36 @@ If one of these saves you an afternoon, a star costs you nothing and helps other
 
 <table>
 <tr>
+<td width="33%" align="center"><a href="#visual-tricks"><img src="assets/thumbs/visual-tricks.png" width="300"><br><b>Five visual tricks, one file</b></a></td>
 <td width="33%" align="center"><a href="#error-bars-for-column-chart-data-labels"><img src="assets/thumbs/error-bars-for-column-chart-data-labels.png" width="300"><br><b>Error bars as label headroom</b></a></td>
 <td width="33%" align="center"><a href="#data-labels-above-the-x-axis"><img src="assets/thumbs/data-labels-above-x-axis.png" width="300"><br><b>Data labels above the x axis</b></a></td>
-<td width="33%" align="center"><a href="#dynamic-format-strings"><img src="assets/thumbs/dynamic-format-strings.png" width="300"><br><b>Dynamic format strings</b></a></td>
 </tr>
 <tr>
+<td align="center"><a href="#dynamic-format-strings"><img src="assets/thumbs/dynamic-format-strings.png" width="300"><br><b>Dynamic format strings</b></a></td>
 <td align="center"><a href="#visual-calculations-for-y-axis-max"><img src="assets/thumbs/visual-calculations-for-y-axis-max.png" width="300"><br><b>Visual calcs set the axis max</b></a></td>
 <td align="center"><a href="#slope-chart"><img src="assets/thumbs/slope-chart.png" width="300"><br><b>Slope chart from a line chart</b></a></td>
-<td align="center"><a href="#strip-plot"><img src="assets/thumbs/strip-plot.png" width="300"><br><b>Strip and jittered strip plots</b></a></td>
 </tr>
 <tr>
+<td align="center"><a href="#strip-plot"><img src="assets/thumbs/strip-plot.png" width="300"><br><b>Strip and jittered strip plots</b></a></td>
 <td align="center"><a href="#3-service-profit-analysis"><img src="assets/thumbs/3-service-profit-analysis.png" width="300"><br><b>Lollipop chart, no lollipop visual</b></a></td>
 <td align="center"><a href="#distribution-by-customer-segment"><img src="assets/thumbs/distribution-by-customer-segment-stacked-columns.png" width="300"><br><b>Ribbons on a stacked column</b></a></td>
-<td align="center"><a href="#testing-ribbon-chart"><img src="assets/thumbs/testing-ribbon-chart.png" width="300"><br><b>Ribbons on 100% stacked</b></a></td>
 </tr>
 <tr>
+<td align="center"><a href="#testing-ribbon-chart"><img src="assets/thumbs/testing-ribbon-chart.png" width="300"><br><b>Ribbons on 100% stacked</b></a></td>
 <td align="center"><a href="#transparent-chart-switching"><img src="assets/thumbs/transparent-chart-switching.png" width="300"><br><b>Chart switching, no bookmarks</b></a></td>
 <td align="center"><a href="#transparent-text"><img src="assets/thumbs/transparent-text.png" width="300"><br><b>A banner that hides itself</b></a></td>
-<td align="center"><a href="#variance-highlights-stacked-bar-chart"><img src="assets/thumbs/variance-highlights-stacked-bar-chart.png" width="300"><br><b>Variance as the tip of a bar</b></a></td>
 </tr>
 <tr>
+<td align="center"><a href="#variance-highlights-stacked-bar-chart"><img src="assets/thumbs/variance-highlights-stacked-bar-chart.png" width="300"><br><b>Variance as the tip of a bar</b></a></td>
 <td align="center"><a href="#8-line-chart-with-selection-highlight"><img src="assets/thumbs/8-line-chart-with-selection-highlight.png" width="300"><br><b>Highlight one line in a crowd</b></a></td>
 <td align="center"><a href="#y-axis-ratio"><img src="assets/thumbs/y-axis-ratio.png" width="300"><br><b>Scatter chart ratio line</b></a></td>
-<td align="center"><a href="#health-dataset"><img src="assets/thumbs/health-dataset.png" width="300"><br><b>A faked variance band</b></a></td>
 </tr>
 <tr>
+<td align="center"><a href="#health-dataset"><img src="assets/thumbs/health-dataset.png" width="300"><br><b>A faked variance band</b></a></td>
 <td align="center"><a href="#half-blank-lines-pl"><img src="assets/thumbs/half-blank-lines-p-and-l.png" width="300"><br><b>Half height rows in a matrix</b></a></td>
 <td align="center"><a href="#sales--budget"><img src="assets/thumbs/sales-and-budget.png" width="300"><br><b>Monthly budget, daily grain</b></a></td>
+</tr>
+<tr>
 <td align="center"><a href="#release-gantt"><img src="assets/thumbs/release-gantt.png" width="300"><br><b>The native Gantt chart</b></a></td>
 </tr>
 </table>
@@ -83,6 +86,22 @@ One dependency worth knowing about: **3 Service Profit Analysis** uses the Chicl
 <br>
 
 ## New core visuals
+
+### Visual Tricks
+
+<img src="assets/screenshots/visual-tricks.png" alt="Five Power BI report pages: data bars set to show the bar only, KPI cards with tinted variance pills, a button slicer coloured like the chart legend, a list slicer with a report page tooltip, and a grid of numbers under a column chart" width="900">
+
+Five small formatting tricks on a made-up outdoor gear retailer, one page each. Most of them lean on the newer core visuals: the new card, the button slicer and the list slicer.
+
+- **Number and bar.** The same measure goes into a matrix twice, and the copy's data bars are set to Show bar only, so a % gets its number and its bar side by side.
+- **Pill badges.** The new card's reference label detail sits on a soft, tinted pill: font colour and background colour on one colour measure, background at 94% transparency.
+- **Slicer legend.** A button slicer takes each category's colour from a measure, so it doubles as the chart's legend.
+- **Slicer tooltip.** A report page tooltip on a list slicer shows the full product names the slicer cuts off.
+- **Chart table.** The grid of numbers under the column chart is a second stacked column chart: four equal blocks per month, with data labels that show the real values.
+
+[Download](https://github.com/InsightfulAnalytics/PBI-Files/raw/main/Visual%20Tricks.pbix) &nbsp;·&nbsp; 6 pages, 24 visuals
+
+<br>
 
 ### Release Gantt
 
@@ -364,13 +383,14 @@ The follow up post makes the case for doing the transformation upstream instead,
 | [Transparent Text](Transparent%20Text.pbix) | Measure driven fill hides and shows a warning banner | 1 | 4 | [2025-11-13](https://www.linkedin.com/feed/update/urn:li:activity:7394621519190028289) |
 | [Variance Highlights Stacked Bar Chart](Variance%20Highlights%20Stacked%20Bar%20Chart.pbix) | Three segment stack turns the bar tip into the variance | 4 | 9 | [2025-05-08](https://www.linkedin.com/feed/update/urn:li:activity:7326008724538429442) |
 | [Visual Calculations for Y Axis Max](Visual%20Calculations%20for%20Y%20Axis%20Max.pbix) | Hidden visual calculation drives the value axis maximum | 3 | 15 | [2025-06-08](https://www.linkedin.com/feed/update/urn:li:activity:7337303507495989248) |
+| [Visual Tricks](Visual%20Tricks.pbix) | Five formatting tricks, one per page, on the newer core visuals | 6 | 24 | coming soon |
 | [Y Axis Ratio](Y%20Axis%20Ratio.pbix) | Scatter ratio line plus DAX that colours each bubble | 3 | 7 | [2025-05-30](https://binexus.net/blog/power-bi-scatter-chart-ratio-line/) |
 
 <br>
 
 ## Notes
 
-**Format.** Fifteen of these are classic `.pbix` files. Three, *Error bars for column chart data labels*, *Transparent Text* and *Release Gantt*, were saved from a newer Desktop build and carry the enhanced report format inside, so their report definitions are readable JSON if you unzip them.
+**Format.** Fifteen of these are classic `.pbix` files. Four, *Error bars for column chart data labels*, *Transparent Text*, *Release Gantt* and *Visual Tricks*, were saved from a newer Desktop build and carry the enhanced report format inside, so their report definitions are readable JSON if you unzip them.
 
 **Themes.** Most files use a theme built with the BIBB.PRO theme generator, or one of my "2025 Projects" palettes. *Testing Ribbon Chart* is the one that runs on the stock Power BI theme.
 
