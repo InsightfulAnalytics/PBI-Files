@@ -6,11 +6,11 @@
 
 ### The `.pbix` files behind my Power BI tips on LinkedIn
 
-Twenty-three working reports. Every one has the data baked in, so you can open it, click into any visual, and see exactly how the trick is wired up.
+Twenty-four working reports. Every one has the data baked in, so you can open it, click into any visual, and see exactly how the trick is wired up.
 
 <br>
 
-[![pbix files](https://img.shields.io/badge/.pbix%20files-23-F2C811?style=for-the-badge&logo=powerbi&logoColor=1a1a1a)](#the-files) [![Core visuals](https://img.shields.io/badge/built%20with-core%20visuals-005F73?style=for-the-badge)](#the-files) [![Follow on LinkedIn](https://img.shields.io/badge/Follow-Tim%20Osborn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/osborntim/) [![Stars](https://img.shields.io/github/stars/InsightfulAnalytics/PBI-Files?style=for-the-badge&color=0A9396)](https://github.com/InsightfulAnalytics/PBI-Files/stargazers)
+[![pbix files](https://img.shields.io/badge/.pbix%20files-24-F2C811?style=for-the-badge&logo=powerbi&logoColor=1a1a1a)](#the-files) [![Core visuals](https://img.shields.io/badge/built%20with-core%20visuals-005F73?style=for-the-badge)](#the-files) [![Follow on LinkedIn](https://img.shields.io/badge/Follow-Tim%20Osborn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/osborntim/) [![Stars](https://img.shields.io/github/stars/InsightfulAnalytics/PBI-Files?style=for-the-badge&color=0A9396)](https://github.com/InsightfulAnalytics/PBI-Files/stargazers)
 
 </div>
 
@@ -63,6 +63,7 @@ If one of these saves you an afternoon, a star costs you nothing and helps other
 <tr>
 <td align="center"><a href="#sales--budget"><img src="assets/thumbs/sales-and-budget.png" width="300"><br><b>Monthly budget, daily grain</b></a></td>
 <td align="center"><a href="#release-gantt"><img src="assets/thumbs/release-gantt.png" width="300"><br><b>The native Gantt chart</b></a></td>
+<td align="center"><a href="#card-trend-charts"><img src="assets/thumbs/card-trend-charts.png" width="300"><br><b>Trend charts inside the card</b></a></td>
 </tr>
 </table>
 
@@ -167,6 +168,16 @@ Power BI's new core Gantt chart, four ways, on 643 software releases. The pipeli
 The data is the Software Delivery & Quality dataset from the [ZoomCharts Power BI Challenge for October 2026](https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/challenges/zoomcharts-power-bi-challenge-october-2026). It's baked in like every other file here, but it's ZoomCharts' data, so this repo's MIT licence doesn't cover it. The Gantt is a preview visual: you need Desktop 26.10 or later with it turned on.
 
 [Read the article](https://binexus.net/blog/power-bi-gantt-chart/) &nbsp;·&nbsp; [Download](https://github.com/InsightfulAnalytics/PBI-Files/raw/main/Release%20Gantt.pbix) &nbsp;·&nbsp; 4 pages, 16 visuals
+
+### Card Trend Charts
+
+<img src="assets/screenshots/card-trend-charts.png" alt="Six Power BI cards beside a navy slicer panel, each with a chart under the number: two lines against last year, monthly columns, a margin line, ranked bars, a map of Australia and one line per sales channel" width="900">
+
+The core Card visual's new Trend axis, six ways. Put a field on the Trend axis and the card draws its measure across it under the number: months give a line or columns, Category gives ranked bars, and State Name with the Australian states map gives a shaded map. One card adds last year as a dashed second line, and one puts Channel in the Categories well so each channel gets its own card and its own trend.
+
+The data is a synthetic homewares retailer, so this repo's MIT licence covers it, and the CSV is here too ([brightside_card_trends.csv](brightside_card_trends.csv), 6,528 rows) if you want to rebuild the model: point the `DataFolder` parameter at the folder you save it in. The Trend axis is a preview feature from the November 2026 update: in an older Desktop the cards open without their charts.
+
+[Read the article](https://binexus.net/blog/power-bi-card-trend-charts/) &nbsp;·&nbsp; [Download](https://github.com/InsightfulAnalytics/PBI-Files/raw/main/Card%20Trend%20Charts.pbix) &nbsp;·&nbsp; [Data](https://github.com/InsightfulAnalytics/PBI-Files/raw/main/brightside_card_trends.csv) &nbsp;·&nbsp; 1 page, 16 visuals
 
 <br>
 
@@ -423,6 +434,7 @@ The follow up post makes the case for doing the transformation upstream instead,
 |---|---|:--:|:--:|:--:|
 | [3 Service Profit Analysis](3%20Service%20Profit%20Analysis.pbix) | Lollipop chart from a zero width line plus error bar stems | 3 | 21 | none |
 | [8 Line Chart With Selection Highlight](8%20Line%20Chart%20With%20Selection%20Highlight.pbix) | Field parameter swaps a duplicate measure over its dimmed twin | 2 | 5 | [2025-03-30](https://www.linkedin.com/feed/update/urn:li:activity:7311948014573522944) |
+| [Card Trend Charts](Card%20Trend%20Charts.pbix) | Trend axis draws a line, column, bar or map chart inside the card | 1 | 16 | [2026-11-19](https://binexus.net/blog/power-bi-card-trend-charts/) |
 | [Chart Table](Chart%20Table.pbix) | A stacked column chart under the chart acts as its data table | 1 | 6 | coming soon |
 | [Data Labels Above X Axis](Data%20Labels%20Above%20X%20Axis.pbix) | Negative visual calcs park every label above the axis | 1 | 3 | [2025-10-09](https://www.linkedin.com/feed/update/urn:li:activity:7381908321672318976) |
 | [Distribution by Customer Segment Stacked Columns](Distribution%20by%20Customer%20Segment%20Stacked%20Columns.pbix) | Ribbon bands on a stacked column chart | 1 | 1 | [2025-10-20](https://www.linkedin.com/feed/update/urn:li:activity:7385990367252242433) |
@@ -449,9 +461,9 @@ The follow up post makes the case for doing the transformation upstream instead,
 
 ## Notes
 
-**Format.** Fifteen of these are classic `.pbix` files. Eight, *Error bars for column chart data labels*, *Transparent Text*, *Release Gantt* and the five tricks with core visuals, were saved from a newer Desktop build and carry the enhanced report format inside, so their report definitions are readable JSON if you unzip them.
+**Format.** Fifteen of these are classic `.pbix` files. Nine, *Error bars for column chart data labels*, *Transparent Text*, *Release Gantt*, *Card Trend Charts* and the five tricks with core visuals, were saved from a newer Desktop build and carry the enhanced report format inside, so their report definitions are readable JSON if you unzip them.
 
-**Themes.** Most files use a theme built with the BIBB.PRO theme generator, or one of my "2025 Projects" palettes. *Testing Ribbon Chart* is the one that runs on the stock Power BI theme.
+**Themes.** Most files use a theme built with the BIBB.PRO theme generator, or one of my "2025 Projects" palettes. *Testing Ribbon Chart* is the one that runs on the stock Power BI theme, and *Card Trend Charts* uses my BI Nexus theme.
 
 **Data.** All sample data. Nothing here comes from a client. *Release Gantt* carries ZoomCharts' challenge dataset, credited in its section.
 
